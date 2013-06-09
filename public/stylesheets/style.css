@@ -1,0 +1,24 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: #00ff00;
+  background: #000;
+}
+
+body nav {
+  font: 16px/1.4 "Lucida Grande", Arial, sans-serif;
+  background: #000;
+  color: #ccc;
+}
+
+body a {
+  color: #0000ff;
+}
+
+form input {
+  padding: 5px;
+  border: 1px solid;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
