@@ -1,0 +1,35 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#hello {
+  float:left;
+  width: 250px;
+}
+
+#content
+{
+//  float:left;
+  font: 14pt Helvetica, Arial, sans-serif;
+  color: brown;
+}
+
+#user
+{
+ clear: left;
+height: 200px;
+width: 400px; 
+padding: 20px;
+background-color: white; 
+}
+
+#copyright
+{
+  float: right;
+}
+
