@@ -3,6 +3,7 @@ html
   head
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
+<<<<<<< HEAD
     include script.html
   body
     div(id='hello')
@@ -13,3 +14,12 @@ html
       block user
     div(id='copyright')
       block copyright
+=======
+  body
+    include header.jade
+    nav
+      include nav.jade
+    block content
+    footer
+      include footer.jade
+>>>>>>> ed0835dbdefb70eb2dc3fb6233be1241914cfcd5

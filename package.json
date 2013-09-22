@@ -6,9 +6,16 @@
     "start": "node app.js"
   },
   "dependencies": {
+<<<<<<< HEAD
     "express": "3.3.5",
     "jade": "*",
     "passport": "*",
     "passport-local": "*"
   }
 }
+=======
+    "express": "3.2.4",
+    "jade": "*"
+  }
+}
+>>>>>>> ed0835dbdefb70eb2dc3fb6233be1241914cfcd5

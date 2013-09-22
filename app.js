@@ -3,6 +3,7 @@
  * Module dependencies.
  */
 
+<<<<<<< HEAD
 var express = require('express');
 var routes = require('./routes');
 var user = require('./routes/user');
@@ -39,6 +40,18 @@ app.configure(function() {
 
 // all environments
 app.set('port', process.env.PORT || 80);
+=======
+var express = require('express')
+  , routes = require('./routes')
+  , user = require('./routes/user')
+  , http = require('http')
+  , path = require('path');
+
+var app = express();
+
+// all environments
+app.set('port', process.env.PORT || 3000);
+>>>>>>> ed0835dbdefb70eb2dc3fb6233be1241914cfcd5
 app.set('views', __dirname + '/views');
 app.set('view engine', 'jade');
 app.use(express.favicon());
@@ -54,6 +67,7 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', routes.index);
+<<<<<<< HEAD
 app.get('/users', user.list);
 app.post('/login', passport.authenticate('local', { successRedirect: '/',
                                                     failureRedirect: '/login' }));
@@ -61,6 +75,9 @@ app.post('/login', passport.authenticate('local', { successRedirect: '/',
 app.get('*', function(req, res){
   res.render('index', { title: 'What???', dns: req.headers.host } );
 });
+=======
+app.get('/alunos', routes.alunos);
+>>>>>>> ed0835dbdefb70eb2dc3fb6233be1241914cfcd5
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
